@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-gradient-to-b from-slate-900 via-slate-700 to-slate-900 p-3 bg-cover bg-fixed min-h-screen;
+}
+
+.web-topic{
+    @apply text-white cursor-default select-none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.topicText{
+    @apply block;
+}
+
+.linkText{
+    @apply text-base underline-offset-1 inline-block cursor-pointer duration-500 text-white/60;
+}
+.linkText:hover{
+    @apply text-white underline shadow-md shadow-indigo-500/40;
+}
