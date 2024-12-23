@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+/* body{
     @apply bg-gradient-to-b from-slate-900 via-slate-700 to-slate-900 p-3 bg-cover bg-fixed min-h-screen;
+} */
+
+body{
+    @apply bg-[url('https://images.pexels.com/photos/2514035/pexels-photo-2514035.jpeg')] bg-no-repeat bg-center bg-cover
 }
 
 .web-topic{

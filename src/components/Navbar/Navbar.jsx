@@ -7,7 +7,7 @@ import '/src/components/Navbar/Navbar.css'
 function Navbar() {
   return (
     <nav className='main-nav'>
-      <ul className='flex justify-around items-center'>
+      <ul className='flex justify-around items-center flex-wrap'>
           <LeftNavbar/>
           <li><Link to ="/position/comeng"><span className='nav-text'>POSITION</span></Link></li>
           <li><Link to ="/learn"><span className='nav-text'>LEARN</span></Link></li>

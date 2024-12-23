@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.learn-container {
+    @apply h-[1300px] flex flex-col items-center justify-center;
+}
