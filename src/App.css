@@ -21,3 +21,28 @@ body{
 .linkText:hover{
     @apply text-white underline shadow-md shadow-indigo-500/40;
 }
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgba(17, 9, 48, 0.378); 
+    }
+    25% {
+        border-color: rgb(22, 22, 66); 
+    }
+    50% {
+        border-color: rgb(56, 44, 84); 
+    }
+    75% {
+        border-color: rgb(22, 22, 66); 
+    }
+    100% {
+        border-color: rgba(17, 9, 48, 0.378); 
+    }
+  }
+  
+  footer {
+    @apply bg-slate-800 w-full h-16 border-4 border-slate-600 rounded-full tracking-[50px];
+    font-family: 'Kanit', sans-serif;
+    animation: borderAnimation 5s infinite linear; 
+  }
+  
