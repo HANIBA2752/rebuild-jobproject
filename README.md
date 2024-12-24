@@ -8,4 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # rebuild-jobproject
 
-npx tailwindcss -i ./src/input.css -o ./dist/outputcss --watch
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
