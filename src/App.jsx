@@ -5,13 +5,18 @@ import AppBox from './components/AppItems/AppBox';
 const App = () => {
   return (
     <div>
-      <section className='h-[400px]'>
-        <AppMidText/>
+      <section className='section1 h-[900px]'>
+        <div >
+          <AppMidText/>
+        </div>
       </section>
-      <section className='h-[400px]'>
+      <section className='section2 h-[900px]'>
         <AppBox/>
       </section>
-      <footer className='mt-[500px] flex justify-center items-center text-white'>
+      <section className='section2 h-[900px]'>
+        <AppBox/>
+      </section>
+      <footer className='py-[80px] flex justify-center items-center text-white'>
         <div>2024</div>
       </footer>
     </div>

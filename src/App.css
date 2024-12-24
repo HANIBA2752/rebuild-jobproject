@@ -6,8 +6,12 @@
     @apply bg-gradient-to-b from-slate-900 via-slate-700 to-slate-900 p-3 bg-cover bg-fixed min-h-screen;
 } */
 
-body{
-    @apply bg-[url('https://images.pexels.com/photos/2514035/pexels-photo-2514035.jpeg')] bg-no-repeat bg-center bg-cover
+.section1{
+    @apply bg-[url('https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg')] bg-no-repeat bg-center bg-cover;
+}
+
+.section2{
+    @apply bg-[url('https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg')] bg-no-repeat bg-center bg-cover
 }
 
 .web-topic{
@@ -45,8 +49,7 @@ body{
   }
   
   footer {
-    @apply bg-slate-800 w-full h-16 border-4 border-slate-600 rounded-full tracking-[50px];
+    @apply bg-slate-800 w-full h-16 tracking-[50px];
     font-family: 'Kanit', sans-serif;
-    animation: borderAnimation 5s infinite linear; 
   }
   
