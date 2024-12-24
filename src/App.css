@@ -7,11 +7,11 @@
 } */
 
 .section1{
-    @apply bg-[url('https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg')] bg-no-repeat bg-center bg-cover;
+    @apply bg-[url('https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg')] bg-no-repeat bg-center bg-cover -mt-[80px];
 }
 
 .section2{
-    @apply bg-[url('https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg')] bg-no-repeat bg-center bg-cover
+    @apply bg-gradient-to-b from-[#141414] to-[#141c14] bg-no-repeat bg-center bg-cover
 }
 
 .web-topic{

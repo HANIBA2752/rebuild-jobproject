@@ -5,15 +5,12 @@ import AppBox from './components/AppItems/AppBox';
 const App = () => {
   return (
     <div>
-      <section className='section1 h-[900px]'>
+      <section className='section1 h-[1000px]'>
         <div >
           <AppMidText/>
         </div>
       </section>
-      <section className='section2 h-[900px]'>
-        <AppBox/>
-      </section>
-      <section className='section2 h-[900px]'>
+      <section className='section2 h-[500px]'>
         <AppBox/>
       </section>
       <footer className='py-[80px] flex justify-center items-center text-white'>

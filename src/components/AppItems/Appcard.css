@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .Appcard{
-    @apply z-10 w-[424px] h-[450px] p-6 bg-gradient-to-br from-slate-800 to-slate-900 border-4 border-slate-400 rounded-3xl duration-500 mt-52;
+    @apply z-10 w-[424px] h-[450px] p-6 bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl duration-500 mt-64;
 }
 
 .Appcard:hover {
