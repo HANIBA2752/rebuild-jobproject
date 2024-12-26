@@ -4,10 +4,10 @@ import Logo from '../../assets/Logo.png';
 
 function LeftNavbar() {
   return ( 
-    <div className="flex justify-start ml-28">
+    <div>
       <Link to="/">
         <img 
-          src={Logo} alt="logo" className="logo max-w-16 max-h-16 w-auto h-auto"
+          src={Logo} alt="logo" className="logo"
         />
       </Link>
     </div>

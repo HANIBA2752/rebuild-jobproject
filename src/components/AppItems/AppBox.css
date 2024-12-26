@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    @apply m-0 p-0;
+}
+
+.appbox-topic{
+    @apply text-neutral-300 text-center text-[50px] font-extralight tracking-wide overflow-hidden translate-y-8;
+    font-family: 'Kanit',sans-serif;
+}
+  
+  .appbox-topic span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 0.1s forwards;
+    text-shadow: 0 0 5px rgba(255,255,255,0.3);
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+.appbox-container{
+    @apply flex justify-center items-center w-screen h-auto;
+}
+
+.appbox{
+    @apply w-4/5 h-[400px] bg-zinc-700/10 rounded-2xl shadow-white/20 shadow-md;
+}
+

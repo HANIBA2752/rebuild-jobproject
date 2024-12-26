@@ -3,35 +3,31 @@
 @tailwind utilities;
 
 .Appcard{
-    @apply z-10 w-[424px] h-[450px] p-6 bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl duration-500 mt-64;
+    @apply z-10 w-[424px] h-[450px] p-6 rounded-3xl duration-500 mt-56 flex flex-col;
 }
 
 .Appcard:hover {
-    @apply z-10 scale-105 rotate-2 shadow-2xl border-slate-500 opacity-90;
+    @apply z-10 scale-105 opacity-90;
 }
 
 .card-topic {
-    @apply mt-4 text-3xl font-bold bg-gradient-to-br from-gray-200 via-sky-200 to-sky-200 bg-clip-text text-transparent underline decoration-4 leading-8 decoration-slate-600;
-    font-family: 'ubuntu', sans-serif;
+    @apply mt-4 text-[40px] text-[#fff] leading-8 tracking-wide;
+    font-family: 'Kanit', sans-serif;
 }
 
 .card-desc{
-    @apply text-slate-300 text-lg mt-3;
+    @apply text-[#f9f9f9] text-lg mt-3 tracking-wide;
     font-family: 'ubuntu',sans-serif;
 }
 
-.card-pc{
+/* .card-pc{
     @apply -mt-48;
-}
+} */
 
 .card-moredetails{
-    @apply text-white font-medium mt-2 bg-slate-500 p-2 inline-block rounded-xl duration-100;
+    @apply text-white/50 font-medium inline-block duration-100 mt-2 ml-auto;
 }
 
 .card-moredetails:hover{
-    @apply bg-slate-700;
-}
-
-.card-moredetails:hover{
-    @apply underline underline-offset-1 cursor-pointer;
+    @apply bg-neutral-700 underline underline-offset-1 cursor-pointer;
 }

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .pos-container {
-    @apply h-[1300px] flex flex-col items-center justify-center mt-[20px] -ml-[1000px];
+    @apply h-[1300px] flex flex-col items-center justify-center -ml-[1000px];
 }
 
 .pos-h1{

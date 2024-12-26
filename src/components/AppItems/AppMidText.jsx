@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom'
 function AppMidText() {
   return (
     <>
-        <div className='flex items-center justify-around gap-55 mt-20'>
-            <div className='web-topic block tracking-widest mt-40'>
-                <span className='topicText topic text-6xl font-bold mb-5'>JOB EXPLORER</span>
-                <span className='topicText text-2xl'>Explore Your Future Roles</span>
-                <span className='topicText linkText'><Link to='/position/comeng'>searching for computer engineer roles &lt;&lt; HERE</Link></span>
+        <div className='flex items-center justify-around gap-55'>
+            <div className='web-topic block'>
+                <h1 className='topicText '>~position</h1><h1 className='topicText'>explorer</h1>
+                <span className='subText block'>
+                Position Explorer lets you explore job roles in IT and tech, <br />helping you plan your career path with key insights.
+                </span>
+                <span className='linkText'><Link to='/position/comeng'>searching for computer engineer roles</Link></span>
             </div>
             <AppCard/>
         </div>
