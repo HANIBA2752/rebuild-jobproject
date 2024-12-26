@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.pos-container {
-    @apply min-h-screen bg-[url('https://images.pexels.com/photos/633409/pexels-photo-633409.jpeg')] bg-no-repeat bg-center bg-cover overflow-hidden;
+.pos-section1 {
+    background: rgb(10,10,10);
+    background: linear-gradient(35deg, rgba(10,10,10,1) 0%, rgba(22,22,22,1) 24%, rgba(3,3,3,1) 50%, rgba(47,46,46,1) 63%, rgba(42,42,42,1) 81%, rgba(9,9,9,1) 100%);   
 }
