@@ -13,9 +13,9 @@ function Position() {
           </div>
         </h1>
         <section className="pos-box">
-          <ul className="pos-ul bg-slate-800 h-full rounded-md">
+          <ul className="pos-u">
             {Array(9).fill().map((_, index) => (
-              <li key={index} className="pos-li">
+              <li key={index} className="pos-li text-white">
                 <div className="text-sm">
                   JOB {index} : <h3 className='inline-block'>Software Engineering</h3>
                   <div>Salary : 50000$</div>

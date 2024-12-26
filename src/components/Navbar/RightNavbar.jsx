@@ -1,6 +1,7 @@
 import React from 'react'
 import togglelight from '../../assets/black_moon.png'
 import { useState } from 'react'
+import './Navbar.css'
 
 function RightNavbar() {
   const [lang, setLang] = useState('EN')
@@ -17,8 +18,8 @@ function RightNavbar() {
           <span className='rightnav-text'>LIGHT OFF</span>
           <img src={togglelight} alt="light" id="togglelight" className='rightnav-img'/>
         </li>
-        <div id="lang" className='rightnav-lang'>
-          <li><span className='smallText-tp' onClick={handleClick}>{lang}</span></li> 
+        <div id="lang" className='rightnav-lang select-none' onClick={handleClick}>
+          <li><span className='rightnav-lang-text'>{lang}</span></li> 
         </div>
       </ul>
     </div>

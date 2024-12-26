@@ -12,11 +12,18 @@ body{
 }
 
 .section2{
-    @apply bg-gradient-to-b from-[#020202] via-[#050505] to-[#141414] w-full;
+    @apply bg-gradient-to-b from-[#020202] via-[#050505] to-[#141414] w-full ;
+}
+
+.section3{
+    @apply bg-gradient-to-b from-[#141414] via-[#030303] to-[#060606] w-full;
+}
+.topic-animate{
+    animation: slideInLeft 2s;
 }
 
 .web-topic{
-    @apply text-white cursor-default select-none mt-10;
+    @apply text-white mt-10;
     font-family: 'Ubuntu', sans-serif;
 }
 

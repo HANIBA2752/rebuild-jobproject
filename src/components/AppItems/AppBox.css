@@ -8,29 +8,47 @@
 }
 
 .appbox-topic{
-    @apply text-neutral-300 text-center text-[50px] font-extralight tracking-wide overflow-hidden translate-y-8;
+    @apply text-neutral-300 text-center text-[50px] font-extralight tracking-wide overflow-hidden relative top-8;
     font-family: 'Kanit',sans-serif;
 }
-  
-  .appbox-topic span {
-    display: inline-block;
-    opacity: 0;
-    animation: fadeIn 0.1s forwards;
-    text-shadow: 0 0 5px rgba(255,255,255,0.3);
-  }
-  
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-  
 
 .appbox-container{
     @apply flex justify-center items-center w-screen h-auto;
 }
 
 .appbox{
-    @apply w-4/5 h-[400px] bg-zinc-700/10 rounded-2xl shadow-white/20 shadow-md;
+    @apply w-4/5 h-[500px] bg-zinc-700/10 rounded-2xl shadow-white/20 shadow-md;
 }
 
+.appbox-content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  
+    grid-template-rows: repeat(7, 1fr);    
+    gap: 70px;   
+    @apply mt-14;                       
+}
+  
+  .appbox-content div {
+    height: 50px;                            
+}
+
+.appbox-content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    grid-template-rows: repeat(7, 1fr);   
+    gap: 10px;                              
+}
+  
+.grid-item {
+    display: flex;                          
+    justify-content: center;
+    align-items: center;
+}
+  
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;                     
+}
+  
+  
