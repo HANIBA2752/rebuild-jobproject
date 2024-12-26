@@ -24,12 +24,12 @@
       width: 50%;
     }
     70% {
-      border-bottom-color: rgba(255, 255, 255, 0.5); /* เลือนสุดท้าย */
+      border-bottom-color: rgba(255, 255, 255, 0.2); /* เลือนสุดท้าย */
       border-bottom-width: 1px;
       width: 75%;
     }
     100% {
-      border-bottom-color: rgba(255, 255, 255, 0.5); /* ชัดเจน */
+      border-bottom-color: rgba(255, 255, 255, 0); /* ชัดเจน */
       border-bottom-width: 1px;
       width: 100%;
     }
