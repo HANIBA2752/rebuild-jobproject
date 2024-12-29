@@ -8,47 +8,62 @@
 }
 
 .appbox-topic{
-    @apply text-neutral-300 text-center text-[50px] font-extralight tracking-wide overflow-hidden relative top-8;
+    @apply text-neutral-300 text-center text-[14px] mb-2 font-light tracking-wide overflow-hidden md:text-[24px];
     font-family: 'Kanit',sans-serif;
 }
 
-.appbox-container{
-    @apply flex justify-center items-center w-screen h-auto;
+.appbox2-topic{
+    @apply text-neutral-300 text-center text-[14px] mb-2 font-light tracking-wide overflow-hidden md:text-[24px];
+    font-family: 'Kanit',sans-serif;
 }
 
-.appbox{
-    @apply w-4/5 h-[500px] bg-zinc-700/10 rounded-2xl shadow-white/20 shadow-md;
+.appbox-container {
+    @apply flex justify-center items-center h-auto w-auto;
+  }
+
+.appbox2-container {
+    @apply flex justify-center items-center h-auto w-auto;
 }
 
-.appbox-content {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);  
-    grid-template-rows: repeat(7, 1fr);    
-    gap: 70px;   
-    @apply mt-14;                       
+.appbox {
+    @apply p-8 bg-[url('https://images.pexels.com/photos/2923591/pexels-photo-2923591.jpeg')] bg-cover rounded-md shadow-md;
+    box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41);
+    /* -webkit-box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41);
+    -moz-box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41); */
 }
-  
-  .appbox-content div {
-    height: 50px;                            
+ 
+.appbox2 {
+    @apply p-8 bg-[url('https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover rounded-md shadow-md;
+    box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41);
+    /* -webkit-box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41);
+    -moz-box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41); */
 }
 
 .appbox-content {
     display: grid;
     grid-template-columns: repeat(7, 1fr); 
     grid-template-rows: repeat(7, 1fr);   
-    gap: 10px;                              
+    gap: 20px;                              
+}
+
+.appbox2-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(4, 1fr);   
+    gap: 20px;                              
 }
   
 .grid-item {
-    display: flex;                          
+    display: flex;     
     justify-content: center;
     align-items: center;
 }
   
 .grid-item img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;                     
+    @apply max-w-full max-h-full object-cover;
 }
   
-  
+
+.grid-anim{
+    animation : fadeInUp 0.5s ease;
+}

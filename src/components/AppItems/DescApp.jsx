@@ -1,24 +1,21 @@
-import React, { useEffect } from 'react'
-import './DescApp.css'
+import React, { useEffect } from 'react';
+import './DescApp.css';
 import AOS from 'aos';
-import 'aos/dist/aos.css';  // AOS styles
+import 'aos/dist/aos.css';
 
 function DescApp() {
   useEffect(() => {
-      AOS.init();  // Initialize AOS
+    AOS.init();
   }, []);
 
   return (
-    
-    <div >
-        <div className='desc-container'>
-          <span className='desc-bg'>
-              <span data-aos="fade-up" data-aos-duration="1000">Unlock your potential, explore endless career possibilities</span>
-          </span>
-          <div className='animate-border'></div>
-          </div>        
+    <div className="desc-container">
+      <div className="desc-bg">
+        <span>Unlock your potential, explore endless career possibilities</span>
+      </div>
+      <div className="animate-border"></div>
     </div>
-  )
+  );
 }
 
-export default DescApp
+export default DescApp;

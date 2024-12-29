@@ -52,7 +52,7 @@
 }
 
 .desc-bg{
-    @apply block text-center text-neutral-500/80 leading-[180px] text-[60px] w-full h-[200px] bg-[url('https://images.pexels.com/photos/9665178/pexels-photo-9665178.jpeg')] bg-cover bg-center bg-no-repeat overflow-hidden;
+    @apply flex justify-center items-center text-neutral-500/80 text-sm h-20 bg-[url('https://images.pexels.com/photos/9665178/pexels-photo-9665178.jpeg')] bg-cover bg-center bg-no-repeat overflow-hidden;
     animation: shadow 10s infinite;
     transition: all ease-in-out;
 }

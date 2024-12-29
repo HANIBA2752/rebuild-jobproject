@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .Appcard{
-    @apply z-10 w-[424px] h-[450px] p-6 rounded-3xl duration-500 mt-56 flex flex-col;
+    @apply w-[424px] h-[450px] p-6 rounded-3xl duration-500 mt-56 flex flex-col;
 }
 
 .Appcard:hover {
-    @apply z-10 scale-105 opacity-90;
+    @apply scale-105 opacity-90;
 }
 
 .card-topic {

@@ -1,30 +1,37 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';  // AOS styles
+import React, { useState } from 'react';
 import './AppBox.css';
 
 function AppBox() {
-
-  const image = 'https://via.placeholder.com/50';  // Placeholder image
-
-  useEffect(() => {
-    AOS.init();  // Initialize AOS
-  }, []);
+  const image = 'https://via.placeholder.com/50';
 
   return (
-    <div>
-      <div className='appbox-topic' data-aos='fade-up' data-aos-duration='1000'>
-        Programming | Scripting | Markup Languages
+    <div >
+      <div className="appbox2-topic"   >
+        Embedded Technologies (Hardware Part)
       </div>
-      <div className='appbox-container'>
-        <div className='appbox'>
-        <div className="appbox-content">
-          {Array.from({ length: 49 }).map((_, index) => (
-            <div key={index} className='grid-item'>
-              <img src={image} alt={`Grid item ${index + 1}`} data-aos='fade-up' data-aos-duration='1000'/>
-            </div>
-          ))}
+      <div className="appbox2-container px-4">
+        <div className="appbox2">
+          <div className="appbox2-content">
+            {Array.from({ length: 20 }).map((_, index) => (
+              <div key={index} className="grid-item">
+                <img src={image} alt={`Grid item ${index + 1}`} />
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
+      <div className="appbox-topic mt-20"   >
+        Programming | Scripting | Markup Languages (Software Part)
+      </div>
+      <div className="appbox-container px-4">
+        <div className="appbox">
+          <div className="appbox-content">
+            {Array.from({ length: 49 }).map((_, index) => (
+              <div key={index} className="grid-item">
+                <img src={image} alt={`Grid item ${index + 1}`} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

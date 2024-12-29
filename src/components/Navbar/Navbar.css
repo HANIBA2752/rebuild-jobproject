@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 .main-nav{
-    @apply z-50 p-3 fixed w-full bg-black/50 overflow-hidden border-white border-opacity-20 backdrop-blur-sm;
+    @apply py-3 fixed w-full bg-black/50 border-white border-opacity-20 backdrop-blur-sm;
+    z-index: 5000;
+    /* @apply py-3 fixed w-full bg-[url('https://images.pexels.com/photos/316902/pexels-photo-316902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover border-white border-opacity-20 backdrop-blur-sm; */
     border-bottom-width: 0.1px;
     /* bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900  shadow-indigo-500/40 shadow-md */
 }
 
 .nav-text{
-    @apply inline-block font-light tracking-[5px] text-[14px] text-slate-200 p-2.5 border-2 border-transparent rounded-full cursor-pointer ;
+    @apply inline-block font-light tracking-[5px] text-[10px] text-slate-200 p-2 border-2 border-transparent rounded-full cursor-pointer ;
+    @apply md:text-[14px] md:ml-1;
     font-family: 'Ysabeau SC', sans-serif;
     transition: border-color 0.3s ease, opacity 0.3s ease, transform 0.2s ease;
 }
@@ -39,15 +42,60 @@
 }
 
 .rightnav {
-    @apply flex justify-end items-center;   
+    @apply flex justify-end items-center w-60;  
 }
 
-.rightnav-ul{
-    @apply flex justify-around items-center border-white/40 rounded-full border-[0.2px] py-2 px-4 gap-1 w-[220px];
+.rightnav-form{
+    @apply w-[80%];
+}
+
+.rightnav-search{
+    @apply flex items-center;
+}
+
+.rightnav-form input[type=text]{
+    @apply w-full h-[30px] bg-white/10 text-white border-white/40 border-[0.2px] rounded-[15px] p-2.5 text-[14px];
+    font-family: 'Ysabeau SC', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.rightnav-form input[type=text]:focus{
+    @apply border-neutral-50;
+    filter: drop-shadow(0 0 3px rgba(255,255,255,0.2));
+}
+
+.rightnav-search img{
+    @apply w-5 h-5 ml-2 cursor-pointer;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 3px rgba(255,255,255,0.2));
+}
+
+.rightnav-search img:hover{
+    filter: drop-shadow(0 0 3px rgba(255,255,255,0.8));
+}
+
+@keyframes clickSearch{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.animate-clickSearch {
+    animation: clickSearch 0.3s ease-in-out;
 }
 
 .rightnav-li{
-    @apply flex justify-center items-center gap-3;
+    @apply flex items-center gap-1 pl-2;
+}
+
+.rightnav-ul{
+    @apply flex justify-around p-2 border-white/40 rounded-full border-[0.2px] gap-2 ;
 }
 
 .rightnav-text{
@@ -56,16 +104,34 @@
 }
 
 .rightnav-img{
-    @apply h-7 w-auto cursor-pointer opacity-40;
+    @apply h-auto w-7 cursor-pointer opacity-40;
+    transition: all 0.2s ease;
     filter: drop-shadow(0 0 3px rgba(255,255,255,0.2));
 }
 
+.rightnav-img:hover{
+    filter: drop-shadow(0 0 3px rgba(255,255,255,0.8));
+}
+
 .rightnav-lang{
-    @apply flex justify-center items-center px-[8px] py-[4px] border-neutral-400 border-[0.6px] rounded-[15px] hover:border-white duration-200 cursor-pointer; 
+    @apply flex justify-center items-center w-20 h-auto border-neutral-400 border-[0.6px] rounded-[15px] hover:border-white duration-200 cursor-pointer; 
 }
 
 .rightnav-lang-text{
-    @apply text-sm text-white font-light hover:font-bold;
+    @apply text-sm text-white font-light;
     font-family: 'Ysabeau SC', sans-serif;
     filter: drop-shadow(0 0 3px rgba(255,255,255,0.5));
+}
+
+@media (max-width: 768px) {
+    .main-nav ul{
+        @apply flex-col flex-wrap;
+        gap: 0 ;
+    }
+    .rightnav{
+        display: none;
+    }
+    .logo{
+        @apply max-w-8 max-h-8;
+    }
 }
