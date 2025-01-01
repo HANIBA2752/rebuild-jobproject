@@ -1,4 +1,5 @@
 // vite.config.js
+import path from "path"
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -7,5 +8,10 @@ export default defineConfig({
   plugins: [react()],
   css: {
     postcss: './postcss.config.js', // ตั้งค่า postcss ถ้าจำเป็น
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
 })

@@ -1,13 +1,7 @@
 import React, { useEffect } from 'react';
 import './DescApp.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 function DescApp() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <div className="desc-container">
       <div className="desc-bg">

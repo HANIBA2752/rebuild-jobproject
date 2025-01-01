@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Main Nav -------------------------------------------------------------- */
+
 .main-nav{
-    @apply py-3 fixed w-full bg-black/50 border-white border-opacity-20 backdrop-blur-sm;
-    z-index: 5000;
-    /* @apply py-3 fixed w-full bg-[url('https://images.pexels.com/photos/316902/pexels-photo-316902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover border-white border-opacity-20 backdrop-blur-sm; */
     border-bottom-width: 0.1px;
+    /* @apply py-3 fixed w-full bg-[url('https://images.pexels.com/photos/316902/pexels-photo-316902.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover border-white border-opacity-20 backdrop-blur-sm; */
     /* bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900  shadow-indigo-500/40 shadow-md */
 }
 
@@ -18,12 +19,14 @@
 }
 
 .nav-text:hover{
-    @apply hover:text-slate-200 border-gray-200;
+    /* @apply hover:text-slate-200 border-gray-200; */
     transform: scale(1.03);
 }
 
+/* LeftNavbar ----------------------------------------------------------  */
+
 .logo{
-    @apply max-w-16 max-h-16 w-auto h-auto transition-all;
+    @apply max-w-8 max-h-8 w-auto h-auto transition-all md:max-w-16 md:max-h-16;
     transition : all 0.3s ease;
 }
 
@@ -40,6 +43,8 @@
 #togglelight:hover{
     opacity: 1;
 }
+
+/* RightNavbar ----------------------------------------------------------  */
 
 .rightnav {
     @apply flex justify-end items-center w-60;  
@@ -95,7 +100,8 @@
 }
 
 .rightnav-ul{
-    @apply flex justify-around p-2 border-white/40 rounded-full border-[0.2px] gap-2 ;
+    @apply flex justify-around p-2  ;
+    @apply border-white/40 rounded-full border-[0.2px] gap-2;
 }
 
 .rightnav-text{
@@ -130,8 +136,5 @@
     }
     .rightnav{
         display: none;
-    }
-    .logo{
-        @apply max-w-8 max-h-8;
     }
 }

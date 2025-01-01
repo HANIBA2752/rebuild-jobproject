@@ -3,10 +3,11 @@ import Navbar from "../components/Navbar/Navbar";
 import '/src/rootlayout/Rootlayout.css'
 
 export default function Rootlayout() {
+
     return (
         <div>
             <div className="fixed">
-                <Navbar/>
+                {/* <Navbar/> */}
             </div>
             <div>
                 <Outlet></Outlet>
