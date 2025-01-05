@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 tbody tr{
     animation: fadeInUp 0.5s;
 }
