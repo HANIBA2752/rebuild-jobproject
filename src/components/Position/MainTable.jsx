@@ -1,4 +1,5 @@
 import React from "react";
+import { prePos } from "../data/pre-pos";
 
 const DataTable = ({ data }) => {
   return data.map((row, index) => {
@@ -44,7 +45,7 @@ const DataTable = ({ data }) => {
   });
 };
 
-const MainTable = ({ data }) => {
+const MainTable = () => {
   return (
     <div className="w-full p-4 pr-8 overflow-x-auto">
       <div className="flex justify-center">
@@ -78,7 +79,7 @@ const MainTable = ({ data }) => {
               </tr>
             </thead>
             <tbody>
-              <DataTable data={data} />
+              <DataTable data={prePos} />
             </tbody>
           </table>
         </div>

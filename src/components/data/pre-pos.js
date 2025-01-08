@@ -4,7 +4,7 @@ export const prePos = [
     position: "Frontend Developer",
     trending: "Hot",
     skills: "HTML, CSS, JavaScript, React",
-  },
+  }, 
   {
     id: 2,
     position: "Backend Developer",
