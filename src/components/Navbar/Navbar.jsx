@@ -6,7 +6,7 @@ import '/src/components/Navbar/Navbar.css'
 
 function Navbar() {
   return (
-    <nav className='main-nav relative w-screen bg-black/50 border-white border-opacity-20 backdrop-blur-sm'>
+    <nav className='main-nav fixed w-screen bg-black/50 border-white border-opacity-20 backdrop-blur-sm'>
       <ul className='flex justify-around items-center'>
           <LeftNavbar/>
           <li><Link to ="/position/comeng"><span className='nav-text'>POSITION</span></Link></li>

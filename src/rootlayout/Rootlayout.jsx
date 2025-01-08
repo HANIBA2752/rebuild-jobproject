@@ -6,9 +6,7 @@ export default function Rootlayout() {
 
     return (
         <div>
-            <div className="fixed">
-                {/* <Navbar/> */}
-            </div>
+            <Navbar/>
             <div>
                 <Outlet></Outlet>
             </div>

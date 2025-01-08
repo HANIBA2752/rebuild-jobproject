@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-    darkMode: ['class'],
-    content: [
-    './src/**/*.{html,js,jsx}', 
-  ],
+module.exports = {
+  darkMode: ["class"],
+  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
   	extend: {
   		fontFamily: {
@@ -65,9 +63,5 @@ export default {
   		}
   	}
   },
-  plugins: [
-    require('tailwindcss-textshadow'),
-      require("tailwindcss-animate")
-],
-}
-
+  plugins: [require("tailwindcss-textshadow"), require("tailwindcss-animate")],
+};

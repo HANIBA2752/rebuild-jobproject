@@ -5,7 +5,7 @@ function Learn() {
   return (
     <div>
       <div className='learn-container'>
-       
+
       </div>
     </div>
   )
