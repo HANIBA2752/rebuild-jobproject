@@ -6,37 +6,39 @@ const DataTable = ({ data }) => {
     let trendClass = "";
     switch (row.trending) {
       case "Hot":
-        trendClass = "border-neutral-600 bg-neutral-900";
+        trendClass = "border-red-200 bg-red-100 text-red-800";
         break;
       case "Popular":
-        trendClass = "border-neutral-600 bg-neutral-600";
+        trendClass = "border-yellow-200 bg-yellow-100 text-yellow-800";
         break;
       case "Growing":
-        trendClass =
-          "border-neutral-600 bg-neutral-300 text-neutral-900 font-light";
+        trendClass = "border-green-200 bg-green-100 text-green-800 font-light";
         break;
       default:
-        trendClass = "";
+        trendClass = "border-neutral-200 bg-neutral-100 text-neutral-800";
     }
 
     return (
-      <tr key={row.id + index} className="hover:bg-neutral-600 text-neutral-50">
-        <td className="border border-neutral-600 px-4 py-2 font-extralight">
-          {index + 1}
+      <tr
+        key={row.id + index}
+        className="hover:bg-neutral-300 text-neutral-800 transition-all duration-200"
+      >
+        <td className="border border-neutral-300 px-4 py-2 font-light">
+          {row.id}
         </td>
-        <td className="border border-neutral-600 px-4 py-2 font-extralight">
+        <td className="border border-neutral-300 px-4 py-2 font-light">
           {row.position}
         </td>
-        <td className="border border-neutral-600 px-4 py-2 font-extralight">
+        <td className="border border-neutral-300 px-4 py-2 font-light">
           {row.skills}
         </td>
-        <td className="border border-neutral-600 px-4 py-2 text-center font-extralight">
+        <td className="border border-neutral-300 px-4 py-2 text-center font-light">
           <span className={`${trendClass} rounded-2xl px-4 py-1 border`}>
             {row.trending}
           </span>
         </td>
-        <td className="border border-neutral-600 px-4 py-2 text-center font-extralight">
-          <button className="bg-neutral-700 text-neutral-50 px-4 py-2 rounded-md hover:bg-neutral-800">
+        <td className="border border-neutral-300 px-4 py-2 text-center font-light">
+          <button className="bg-neutral-100 text-neutral-800 px-4 py-2 rounded-md hover:bg-neutral-300 hover:text-neutral-900 border border-neutral-400 transition-all duration-200">
             GO
           </button>
         </td>
@@ -45,41 +47,48 @@ const DataTable = ({ data }) => {
   });
 };
 
-const MainTable = () => {
+const MainTable = ({ currentPage, handlePageChange }) => {
+  const itemsPerPage = 11;
+  const totalItems = prePos.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentData = prePos.slice(startIndex, endIndex);
+
   return (
     <div className="w-full p-4 pr-8 overflow-x-auto">
       <div className="flex justify-center">
         <div className="overflow-x-auto w-full">
-          <table className="table-auto w-full bg-neutral-800 border border-neutral-600 border-collapse">
-            <thead className="bg-neutral-900">
+          <table className="table-auto w-full bg-neutral-100 border border-neutral-300 border-collapse overflow-hidden">
+            <thead className="bg-neutral-200">
               <tr>
                 <th
-                  className="text-neutral-50 font-medium tracking-[5px] bg-neutral-800 py-2 px-6 text-left"
-                  colSpan="3"
+                  className="text-neutral-800 font-medium tracking-[5px] bg-neutral-100 py-2 px-6 text-left"
+                  colSpan="5"
                 >
                   Computer Engineering
                 </th>
               </tr>
-              <tr className="text-neutral-50">
-                <th className="border border-neutral-600 px-4 py-2 text-left font-light">
+              <tr className="text-neutral-800">
+                <th className="border border-neutral-300 px-4 py-2 text-left font-light">
                   No.
                 </th>
-                <th className="border border-neutral-600 px-4 py-2 text-left font-light">
+                <th className="border border-neutral-300 px-4 py-2 text-left font-light">
                   Position
                 </th>
-                <th className="border border-neutral-600 px-4 py-2 text-left font-light">
+                <th className="border border-neutral-300 px-4 py-2 text-left font-light">
                   Mostly Skills Requirement
                 </th>
-                <th className="border border-neutral-600 px-4 py-2 text-center font-light">
+                <th className="border border-neutral-300 px-4 py-2 text-center font-light">
                   Trending
                 </th>
-                <th className="border border-neutral-600 px-4 py-2 text-center font-light">
+                <th className="border border-neutral-300 px-4 py-2 text-center font-light">
                   Action
                 </th>
               </tr>
             </thead>
             <tbody>
-              <DataTable data={prePos} />
+              <DataTable data={currentData} />
             </tbody>
           </table>
         </div>

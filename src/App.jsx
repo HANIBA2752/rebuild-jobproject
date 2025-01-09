@@ -4,12 +4,10 @@ import { Navbar, AppMidText, AppBox, DescApp, Promote, Footer } from './componen
 const App = () => {
   return (
     <div>
-      <Navbar />
       <AppMidText />
       <AppBox />
       <DescApp />
       <Promote />
-      <Footer />
     </div>
   );
 };

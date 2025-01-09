@@ -8,12 +8,12 @@
 }
 
 .appbox-topic{
-    @apply text-neutral-300 text-center text-[14px] mb-2 font-light tracking-wide overflow-hidden md:text-[24px];
+    @apply text-neutral-600 text-center text-[14px] mb-2 font-light tracking-wide overflow-hidden md:text-[24px];
     font-family: 'Kanit',sans-serif;
 }
 
 .appbox2-topic{
-    @apply text-neutral-300 text-center text-[14px] mb-2 font-light tracking-wide overflow-hidden md:text-[24px];
+    @apply text-neutral-600 text-center text-[14px] mb-2 font-light tracking-wide overflow-hidden md:text-[24px];
     font-family: 'Kanit',sans-serif;
 }
 
@@ -27,14 +27,14 @@
 
 .appbox {
     @apply p-8 bg-[url('https://images.pexels.com/photos/2923591/pexels-photo-2923591.jpeg')] bg-cover rounded-md shadow-md;
-    box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41);
+    box-shadow: 4px 2px 14px 2px rgba(255,255,255,0.42);
     /* -webkit-box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41);
     -moz-box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41); */
 }
  
 .appbox2 {
-    @apply p-8 bg-[url('https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover rounded-md shadow-md;
-    box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41);
+    @apply p-8 bg-[url('https://images.pexels.com/photos/2923591/pexels-photo-2923591.jpeg')] bg-cover rounded-md shadow-md;
+    box-shadow: 4px 2px 14px 2px rgba(255,255,255,0.42);
     /* -webkit-box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41);
     -moz-box-shadow: -2px 5px 25px 0px rgba(255,255,255,0.41); */
 }

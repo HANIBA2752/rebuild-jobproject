@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
-import togglelightoff from '../../assets/black_moon.png'
-import togglelighton from '../../assets/white_moon.png'
 import search from '../../assets/search.svg'
 import { useState } from 'react'
+import { FaRegLightbulb } from "react-icons/fa";
 import './Navbar.css'
 
 function RightNavbar() {
@@ -25,14 +24,7 @@ function RightNavbar() {
     <div className='rightnav'>
       <ul className='rightnav-ul'>
         <li className='rightnav-li'>
-          {/* <form className='rightnav-form'>
-            <div className='rightnav-search'>
-              <input type="text" name="search" id="search" />
-              <button type="submit"><img alt="svgImg" id="search-img" onClick={handleClickSearch} src={search}/></button>
-            </div>
-          </form> */}
-          <span className='rightnav-text'>LIGHT OFF</span>
-          <img src={togglelightoff} alt="light" className='rightnav-img'/>
+          <FaRegLightbulb className='text-white i-bulb' />
         </li>
         <div id="lang" className='rightnav-lang select-none' onClick={handleClick}>
           <li><span className='rightnav-lang-text'>{lang}</span></li> 

@@ -39,7 +39,7 @@
 }
 
 .desc-bg{
-    @apply flex justify-center items-center h-20 bg-[url('https://images.pexels.com/photos/9665178/pexels-photo-9665178.jpeg')] bg-cover bg-center bg-no-repeat overflow-hidden;
+    @apply flex justify-center items-center h-20 bg-[url('https://images.pexels.com/photos/134054/pexels-photo-134054.jpeg')] bg-cover bg-bottom bg-no-repeat overflow-hidden;
     transition: all ease-in-out;
 }   
 

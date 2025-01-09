@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./DescApp.css";
+import { Typewriter } from 'react-simple-typewriter'
 
 function DescApp() {
   return (
@@ -8,7 +9,14 @@ function DescApp() {
         <div className="desc-container">
           <div className="desc-bg">
             <span>
-              Unlock your potential, explore endless career possibilities
+              <Typewriter 
+              words={['Unlock your potential, explore endless career possibilities']}
+              typeSpeed={70}
+              deleteSpeed={0}
+              delaySpeed={5000}
+              cursor
+              loop={true}
+              />
             </span>
           </div>
           <div className="animate-border"></div>
