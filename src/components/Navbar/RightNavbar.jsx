@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import search from '../../assets/search.svg'
 import { useState } from 'react'
 import { FaRegLightbulb } from "react-icons/fa";
 import './Navbar.css'
