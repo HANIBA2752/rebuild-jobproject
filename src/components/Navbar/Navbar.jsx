@@ -11,6 +11,11 @@ function Navbar() {
         <ul className="flex justify-around items-center">
           <LeftNavbar />
           <li>
+            <Link to="/">
+              <span className="nav-text">HOME</span>
+            </Link>
+          </li>
+          <li>
             <Link to="/position/comeng">
               <span className="nav-text">POSITION</span>
             </Link>
@@ -18,11 +23,6 @@ function Navbar() {
           <li>
             <Link to="/learn">
               <span className="nav-text">LEARN</span>
-            </Link>
-          </li>
-          <li>
-            <Link to="/community">
-              <span className="nav-text">COMMUNITY</span>
             </Link>
           </li>
           <li>
