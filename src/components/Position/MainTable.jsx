@@ -47,6 +47,7 @@ const DataTable = ({ data }) => {
   });
 };
 
+// prePos อาจจะเป็นที่ที่ต้องแทนด้วย DB (backend)
 const MainTable = ({ currentPage, handlePageChange }) => {
   const itemsPerPage = 11;
   const totalItems = prePos.length;

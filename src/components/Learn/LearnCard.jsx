@@ -2,7 +2,7 @@ import React from "react";
 
 const LearnCard = ({ index, Website, Description, img }) => {
   return (
-    <div className="dark:bg-neutral-800 dark:text-white bg-white shadow-md rounded-2xl p-6 my-8 border border-gray-300 w-80 mx-3 flex flex-col items-center transition-shadow duration-300 hover:shadow-xl">
+    <div className="dark:bg-neutral-800 dark:text-white animate__animated animate__slideInUp bg-white shadow-md rounded-2xl p-6 my-8 border border-gray-300 w-80 mx-3 flex flex-col items-center transition-shadow duration-300 hover:shadow-xl">
       {/* รูปภาพ */}
       <img src={img} alt={`Resource ${index}`} className="w-24 h-24 object-contain mb-4 rounded-lg" />
 

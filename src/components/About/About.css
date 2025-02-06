@@ -12,7 +12,7 @@
 }
 
 .abt-title {
-    @apply dark:bg-neutral-800 dark:text-white text-white bg-neutral-400 w-full h-28 text-6xl flex justify-center items-center font-semibold m-10;
+    @apply dark:bg-neutral-800 dark:text-white text-white p-3 rounded-lg bg-neutral-400 w-96 h-28 text-6xl flex justify-center items-center font-semibold m-10;
 }
 
 .abt-logo {

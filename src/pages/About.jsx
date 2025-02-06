@@ -1,5 +1,6 @@
 import React from 'react';
 import '../components/About/About.css';
+import "animate.css";
 import logo from '../assets/Logo.png';
 import TeamCard from '../components/About/TeamCard'; // import คอมโพเนนต์ TeamCard
 
@@ -14,12 +15,12 @@ function About() {
         />
       </div>
       <div className="about-container">
-        <h1 className="abt-title">ABOUT US</h1>
+        <h1 className="abt-title animate__animated animate__slideInUp">ABOUT US</h1>
         <div className="abt-logo">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" className='animate__animated animate__slideInUp' />
           <div>
-            <h1 className='dark:text-neutral-600'>Overview of JOB Explore Website</h1>
-            <h2 className='job-des dark:text-neutral-600'>
+            <h1 className='animate__animated animate__slideInUp dark:text-neutral-600'>Overview of JOB Explore Website</h1>
+            <h2 className='animate__animated animate__slideInUp job-des dark:text-neutral-600'>
               JOB Explore is a website created for recent graduates and anyone interested in the career
               paths of computer engineers. It provides insights into the available job roles, their
               responsibilities, and the required skills to pursue these careers. Additionally, it summarizes
@@ -29,7 +30,7 @@ function About() {
         </div>
 
         <div>
-          <h1 className="creator-title">Meet Our Team</h1>
+          <h1 className="creator-title animate__animated animate__fadeInUpBig">Meet Our Team</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* การ์ด 1 */}
             <TeamCard

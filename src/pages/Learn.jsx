@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../components/Learn/Learn.css';
+import "animate.css";
 import { learnData } from '@/components/data/learn-data';
 import LearnCard from '../components/Learn/LearnCard';
 
@@ -12,8 +13,8 @@ function Learn() {
 
   return (
     <div className='learn-container '>
-      <h1 className="title">Unlock your potential</h1>
-      <p className="title"> — your future starts here!</p>
+      <h1 className="title animate__animated animate__backInRight">Unlock your potential</h1>
+      <p className="title animate__animated animate__backInRight"> — your future starts here!</p>
 
       {/* Search Bar */}
       <div className="searchbar bg-[#a5a5a5] p-8">
