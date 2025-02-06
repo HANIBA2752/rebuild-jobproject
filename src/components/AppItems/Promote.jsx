@@ -38,11 +38,11 @@ const Promote = () => {
   return (
     <section className="advice py-10">
       <div>
-        <h3 className="text-lg sm:text-md md:text-xl font-medium tracking-[5px] text-neutral-800 bg-neutral-200 m-auto text-center py-2 shadow-md">
+        <h3 className="text-lg sm:text-md md:text-xl font-medium tracking-[5px] text-neutral-800 bg-neutral-200 dark:bg-neutral-600 dark:text-neutral-100 m-auto text-center py-2 shadow-md">
           <em>Top Job Search Sites</em>
         </h3>
       </div>
-      <Slider {...settings} className="bg-neutral-100 text-neutral-800 p-1 shadow-lg">
+      <Slider {...settings} className="bg-neutral-100 dark:bg-neutral-800 text-neutral-800 p-1 shadow-lg">
         {websites.map((site, index) => (
           <div
             key={index}

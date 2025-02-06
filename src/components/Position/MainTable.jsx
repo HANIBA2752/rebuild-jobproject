@@ -21,7 +21,7 @@ const DataTable = ({ data }) => {
     return (
       <tr
         key={row.id + index}
-        className="hover:bg-neutral-300 text-neutral-800 transition-all duration-200"
+        className="dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-600 hover:bg-neutral-300 text-neutral-800 transition-all duration-200"
       >
         <td className="border border-neutral-300 px-4 py-2 font-light">
           {row.id}
@@ -60,16 +60,16 @@ const MainTable = ({ currentPage, handlePageChange }) => {
       <div className="flex justify-center">
         <div className="overflow-x-auto w-full">
           <table className="table-auto w-full bg-neutral-100 border border-neutral-300 border-collapse overflow-hidden">
-            <thead className="bg-neutral-200">
+            <thead className=" bg-neutral-200">
               <tr>
                 <th
-                  className="text-neutral-800 font-medium tracking-[5px] bg-neutral-100 py-2 px-6 text-left"
+                  className="dark:bg-neutral-800 dark:text-white text-neutral-800 font-medium tracking-[5px] bg-neutral-100 py-2 px-6 text-left"
                   colSpan="5"
                 >
                   Computer Engineering
                 </th>
               </tr>
-              <tr className="text-neutral-800">
+              <tr className="dark:bg-neutral-900 dark:text-white text-neutral-800">
                 <th className="border border-neutral-300 px-4 py-2 text-left font-light">
                   No.
                 </th>

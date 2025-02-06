@@ -27,7 +27,7 @@ function Navbar() {
           </li>
           <li>
             <Link to="/contact">
-              <span className="nav-text">CONTACT US</span>
+              <span className="nav-text">ABOUT US</span>
             </Link>
           </li>
           <RightNavbar />

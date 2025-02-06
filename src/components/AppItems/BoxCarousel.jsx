@@ -11,7 +11,7 @@ const BoxCarousel = ({ data }) => {
           <img
             src={img.url}
             alt={img.name}
-            className="h-5 w-5 object-contain"
+            className=" h-5 w-5 object-contain"
           />
         </div>
       ))}
