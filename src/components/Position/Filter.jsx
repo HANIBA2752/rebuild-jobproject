@@ -16,8 +16,6 @@ function Filter() {
           <option>Sort by</option>
           <option>A-Z</option>
           <option>Z-A</option>
-          <option>Highest Salary</option>
-          <option>Lowest Salary</option>
         </select>
       </div>
 

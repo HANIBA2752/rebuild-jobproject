@@ -18,7 +18,7 @@ export const learnData = [
     Website: "https://www.khanacademy.org/computing/computer-programming",
     Description:
       "Khan Academy offers free courses on computer programming, including JavaScript, HTML/CSS, and SQL basics.",
-    img: "https://play-lh.googleusercontent.com/TpK0AcjPn5-XDKgSZ5jAob1H7MsQuJILOMR4M4QYkTt5CBPgTJVr7mysrKM6Ia8SrX8=w240-h480-rw"
+    img: "https://images.seeklogo.com/logo-png/39/1/khan-academy-logo-png_seeklogo-394590.png"
   },
   {
     index: "Udemy",
@@ -39,7 +39,7 @@ export const learnData = [
     Website: "https://www.geeksforgeeks.org",
     Description:
       "GeeksforGeeks provides tutorials, programming questions, and interview preparation for software developers.",
-    img: "https://play-lh.googleusercontent.com/ZI21NMObsjB7DbPU_EXRymHJL3HQpfsrB2N4CWb-diXm4xjl_13mmetYQZvcpgGf-64"
+    img: "https://geeksforgeeks.zohorecruit.in/recruit/viewCareerImage.do?page_id=61093000000211152&type=logo&file_name=GG_Logo.png"
   },
   {
     index: "MDN Web Docs",
