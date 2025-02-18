@@ -1,15 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Navbar, AppMidText, AppBox, DescApp, Promote, Footer } from './components'
+import { AppMidText, AppBox, DescApp, Promote, Footer } from './components';
+import Position from './pages/Position';
+import PosDetail from './pages/Pos-Detail';
 
 const App = () => {
-
   return (
     <div>
-      <AppMidText />
+      <Routes>
+        <Route path="/" element={<AppMidText />} />
+        <Route path="/position" element={<Position />} />
+        <Route path="/position-info" element={<PosDetail />} />
+      </Routes>
       <AppBox />
       <DescApp />
       <Promote />
+      <Footer />
     </div>
   );
 };

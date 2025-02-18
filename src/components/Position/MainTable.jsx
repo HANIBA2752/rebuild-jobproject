@@ -3,6 +3,8 @@ import { prePos } from "../data/pre-pos";
 import { useNavigate } from "react-router-dom";
 
 const DataTable = ({ data }) => {
+  const navigate = useNavigate();  // useNavigate hook
+
   return data.map((row, index) => {
     let trendClass = "";
     switch (row.trending) {
@@ -19,7 +21,6 @@ const DataTable = ({ data }) => {
         trendClass = "border-neutral-200 bg-neutral-100 text-neutral-800";
     }
 
-  //ปุ่ม Go และ Trending
     return (
       <tr
         key={row.id + index}
@@ -40,7 +41,10 @@ const DataTable = ({ data }) => {
           </span>
         </td>
         <td className="border border-neutral-300 px-4 py-2 text-center font-light">
-          <button className="bg-neutral-100 text-neutral-800 px-4 py-2 rounded-md hover:bg-neutral-300 hover:text-neutral-900 border border-neutral-400 transition-all duration-200">
+          <button
+            className="bg-neutral-100 text-neutral-800 px-4 py-2 rounded-md hover:bg-neutral-300 hover:text-neutral-900 border border-neutral-400 transition-all duration-200"
+            onClick={() => navigate('/position-info', { state: { id: row.id } })}
+          >
             GO
           </button>
         </td>
@@ -49,7 +53,6 @@ const DataTable = ({ data }) => {
   });
 };
 
-// prePos เป็นที่ที่ต้องแทนด้วย DB (backend)
 const MainTable = ({ currentPage, handlePageChange }) => {
   const itemsPerPage = 11;
   const totalItems = prePos.length;

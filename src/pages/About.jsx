@@ -5,7 +5,7 @@ import logo from '../assets/Logo.png';
 import jai from '../assets/jai.jpg'
 import bell from '../assets/bell.jpg'
 import earth from '../assets/earth.jpg'
-import TeamCard from '../components/About/TeamCard'; // import คอมโพเนนต์ TeamCard
+import TeamCard from '../components/About/TeamCard';
 
 function About() {
   return (
@@ -63,7 +63,7 @@ function About() {
               name="Wuttipat Srikham"
               description=" "
               facebook="https://www.facebook.com/profile.php?id=100002190974853"
-              instagram="https://instagram.com/michaellee"
+              instagram="https://www.instagram.com/earth.wut_ti/"
               github="https://github.com/michaellee"
               email="wuttipat2004@gmail.com"
               phone="095-134-1949"

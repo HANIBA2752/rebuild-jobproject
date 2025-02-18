@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Learn from './pages/Learn.jsx'
 import Position from './pages/Position.jsx'
 import About from './pages/About.jsx'
+import PosDetail from './pages/Pos-Detail.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 const router = createBrowserRouter([{
@@ -19,6 +20,9 @@ const router = createBrowserRouter([{
   },{
     path: "/position/comeng",
     element: <Position/>
+  },{
+    path: "/position-info",
+    element: <PosDetail/>
   },{
     path: "/community",
     element: <Position/>
