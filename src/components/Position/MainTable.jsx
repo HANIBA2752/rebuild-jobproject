@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { prePos } from "../data/pre-pos";
 import { useNavigate } from "react-router-dom";
 
@@ -8,13 +8,13 @@ const DataTable = ({ data }) => {
   return data.map((row, index) => {
     let trendClass = "";
     switch (row.trending) {
-      case "Hot":
+      case "HOT":
         trendClass = "border-red-200 bg-red-100 text-red-800";
         break;
-      case "Popular":
+      case "POPULAR":
         trendClass = "border-yellow-200 bg-yellow-100 text-yellow-800";
         break;
-      case "Growing":
+      case "GROWING":
         trendClass = "border-green-200 bg-green-100 text-green-800 font-light";
         break;
       default:
@@ -43,13 +43,13 @@ const DataTable = ({ data }) => {
         <td className="border border-neutral-300 px-4 py-2 text-center font-light">
           <button
             className="bg-neutral-100 text-neutral-800 px-4 py-2 rounded-md hover:bg-neutral-300 hover:text-neutral-900 border border-neutral-400 transition-all duration-200"
-            onClick={() => navigate('/position-info', { state: { id: row.id } })}
+            onClick={() => navigate(`/position-info/${row.id}`)}
           >
             GO
           </button>
         </td>
-      </tr>
-    );
+                                                                                                                                                                                                                                </tr>
+                                                                                                                                                                                                                              );
   });
 };
 
@@ -60,6 +60,30 @@ const MainTable = ({ currentPage, handlePageChange }) => {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentData = prePos.slice(startIndex, endIndex);
+  const [data, setData] = useState([])
+  
+  async function loadJobs() {
+    const resp = await fetch(`${import.meta.env.VITE_API_URL}/api/jobs`)
+    const js = await resp.json()
+    for(const data of js){
+      const transformed = {
+        id: data.id,
+        position: data.position.name,
+        trending: data.trending_level,
+        skills: (data.job_skills ?? []) // [{"skills": { name: "Test"}}, {"skills": { name: "Test2"}}]
+          .map((i) => i.skills.name) // ["Test", "Test2"]
+          .join(", ") // Test, Test2
+      }
+      setData((p) => ([...p, transformed]))
+    }
+  }
+
+  useEffect(() => {
+    return () => {
+      void loadJobs()
+    }
+  }, [])
+
 
   return (
     <div className="w-full p-4 pr-8 overflow-x-auto">
@@ -94,7 +118,7 @@ const MainTable = ({ currentPage, handlePageChange }) => {
               </tr>
             </thead>
             <tbody>
-              <DataTable data={currentData} />
+              <DataTable data={data} />
             </tbody>
           </table>
         </div>

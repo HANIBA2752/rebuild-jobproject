@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaGithub, FaEnvelope, FaPhoneAlt } from 'react
 
 const TeamCard = ({ image, name, description, facebook, instagram, github, email, phone }) => {
   return (
-    <div className="card dark:bg-neutral-800 dark:text-white bg-white shadow-lg rounded-lg p-6 text-center mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+    <div className="card dark:bg-neutral-800 dark:text-white bg-white shadow-lg rounded-lg p-6 text-center mx-auto min-w-[284px] max-w-[300px]">
       <img 
         src={image} 
         alt={name} 

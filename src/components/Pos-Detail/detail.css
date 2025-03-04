@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .posDetail-container {
-  @apply dark:bg-neutral-300 h-screen pt-10 items-center justify-center bg-neutral-200;
+  @apply dark:bg-neutral-300 pb-10  pt-10 items-center justify-center bg-neutral-200 min-h-screen;
 }
 
 .posDetail-header {

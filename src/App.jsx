@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<AppMidText />} />
         <Route path="/position" element={<Position />} />
-        <Route path="/position-info" element={<PosDetail />} />
+        <Route path="/position-info/:id" element={<PosDetail />} />
       </Routes>
       <AppBox />
       <DescApp />

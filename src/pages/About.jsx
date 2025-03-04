@@ -34,7 +34,7 @@ function About() {
 
         <div>
           <h1 className="creator-title animate__animated animate__fadeInUpBig">Meet Our Team</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {/* การ์ด 1 */}
             <TeamCard
               image={jai}
@@ -44,7 +44,6 @@ function About() {
               instagram="https://www.instagram.com/k.kritx_/"
               github="https://github.com/kritsadagorn"
               email="catsamotyba@gmail.com"
-              phone="093-3781551"
             />
             {/* การ์ด 2 */}
             <TeamCard
@@ -55,7 +54,6 @@ function About() {
               instagram="https://www.instagram.com/perish_sunflower/"
               github="https://github.com/TheerapatGunthog"
               email="Bellbelieve.work@gmail.com"
-              phone="083-2152319"
             />
             {/* การ์ด 3 */}
             <TeamCard
@@ -66,7 +64,6 @@ function About() {
               instagram="https://www.instagram.com/earth.wut_ti/"
               github="https://github.com/michaellee"
               email="wuttipat2004@gmail.com"
-              phone="095-134-1949"
             />
           </div>
         </div>

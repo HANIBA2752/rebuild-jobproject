@@ -15,5 +15,13 @@ export const posDetail = [
       description: "",
       do: ""
     },
+    {
+      id: 3,
+      position: "DevOps Engineer",
+      trending: "Growing",
+      skills: "",
+      description: "",
+      do: ""
+    },
   ]
   

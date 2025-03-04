@@ -32,7 +32,7 @@ export const learnData = [
     Website: "https://www.w3schools.com",
     Description:
       "W3Schools is a popular web development platform offering tutorials on web technologies like HTML, CSS, JavaScript, and more.",
-    img: "https://yt3.googleusercontent.com/Jzh-VfliIJvWX-jBOFRXfCUpDdhInOokGZQshKlET4H-u1OLl_80GY-2wwe8gvQwFoSzeeYzNg=s900-c-k-c0x00ffffff-no-rj"
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq_fjRVJLHlGB9w7R5zuvuciwZ9zwgGN6-oQ&s"
   },
   {
     index: "GeeksforGeeks",
